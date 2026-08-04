@@ -15,6 +15,5 @@ if (skor >= 90) {
     grade = "E";
 }
 
-// Untuk menampilkan output sesuai contoh di gambar
 console.log("Skor: " + skor);
 console.log("Grade: " + grade);

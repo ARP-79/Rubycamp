@@ -5,7 +5,6 @@ let tarifPerJam = 0;
 let totalBayar = 0;
 let isValid = true;
 
-// Tulis kode if-else if-else statement di sini
 if (jenisKendaraan === "motor") {
     tarifPerJam = 2000;
 } else if (jenisKendaraan === "mobil") {
@@ -17,7 +16,6 @@ if (jenisKendaraan === "motor") {
     console.log("Kendaraan tidak diizinkan");
 }
 
-// Menghitung total dan menampilkan output jika kendaraan valid
 if (isValid) {
     totalBayar = tarifPerJam * durasi;
     
