@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 function getArrayInfo(arr) {
     return {
         length: arr.length,
