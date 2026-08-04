@@ -5,7 +5,7 @@ let tebakan;
 let percobaan = 0;
 
 // Tulis kode while loop di sini untuk game tebak angka
-while (tebakan !== angkaRahasia) {
+while (tebakan == angkaRahasia) {
     tebakan = parseInt(prompt("Masukkan tebakan angka Anda:"));
     percobaan++;
 
