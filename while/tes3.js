@@ -10,7 +10,7 @@ while (pilihan !== 4) {
     console.log("3. Kali");
     console.log("4. Keluar");
     
-    // Mengambil input dari user (asumsi menggunakan prompt di browser)
+
     pilihan = parseInt(prompt("Pilih menu (1-4):"));
 
     if (pilihan === 1) {
