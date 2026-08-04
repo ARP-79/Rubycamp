@@ -11,7 +11,7 @@ while (true) {
     if (input === null || input.trim() === "" || isNaN(angka) || angka < 1 || angka > 10) {
         console.log("Input tidak valid, masukkan angka 1-10");
     } else {
-        break; // Keluar dari loop jika input sudah valid
+        break;
     }
 }
 
