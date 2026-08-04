@@ -6,7 +6,6 @@ let tombolDitekan = false;
 while (waktu > 0) {
     console.log("Countdown: " + waktu);
     
-    // Menyimulasikan tombol ditekan pada detik ke-7 sesuai contoh output
     if (waktu === 7) {
         tombolDitekan = true;
         break; // Keluar dari loop karena tombol ditekan
