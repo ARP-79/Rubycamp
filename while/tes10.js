@@ -5,17 +5,15 @@ let totalPositif = 0;
 
 // Tulis kode while loop di sini untuk memproses array
 while (i < angka.length) {
-  // Berhenti ketika menemukan angka negatif
   if (angka[i] < 0) {
     break;
   }
   
-  // Proses angka positif
   console.log("Memproses: " + angka[i] + " (positif)");
   jumlahPositif++;
   totalPositif += angka[i];
   
-  i++; // Naikkan indeks ke elemen berikutnya
+  i++; 
 }
 
 console.log("Jumlah angka positif: " + jumlahPositif);
