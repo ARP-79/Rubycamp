@@ -13,6 +13,6 @@ do {
         console.log("percobaan " + percobaan + ": " + angkaRandom + " (ganjil, coba lagi)");
     }
 
-} while (angkaRandom % 2 !== 0); // Loop terus berjalan jika angka yang didapat ganjil
+} while (angkaRandom % 2 !== 0); 
 
 console.log("Angka genap ditemukan: " + angkaRandom + " dalam " + percobaan + " percobaan");
