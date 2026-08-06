@@ -1,4 +1,4 @@
-let bahasa = "EN"; // Driver code dari soal
+let bahasa = "EN"; 
 // Tulis kode switch statement di sini
 
 switch (bahasa) {
