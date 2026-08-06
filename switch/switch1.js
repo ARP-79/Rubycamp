@@ -1,4 +1,4 @@
-let nomorHari = 3;
+let nomorHari = 4;
 let namaHari
 
 switch (nomorHari){

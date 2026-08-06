@@ -14,6 +14,6 @@ switch (warna) {
     console.log("Lampu hijau: Silakan jalan");
     break;
   default:
-    console.log("Warna tidak valid / Lampu rusak");
+    console.log("Lampu rusak");
     break;
 }
