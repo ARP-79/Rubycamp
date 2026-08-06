@@ -2,6 +2,9 @@ let statusCode = 404;
 // Tulis kode switch statement di sini
 
 switch (statusCode) {
+    case 200:
+        console.log("status 200: OK");
+        break;
     case 404:
         console.log("Status 404: Not Found - Halaman tidak ditemukan");
         break;
@@ -13,4 +16,4 @@ switch (statusCode) {
         break;
     default:
         console.log("Status: Unknown Status");
-}
+} 

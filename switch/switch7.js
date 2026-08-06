@@ -5,7 +5,7 @@ switch (size) {
     console.log("Size : Small (36-38)");
     break;
   case "M":
-    console.log("Size : Medium (38-40)"); 
+    console.log("Size : Medium (38-42)"); 
     break;
   case "L":
     console.log("Size : Large (44-46)");
