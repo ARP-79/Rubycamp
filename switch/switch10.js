@@ -11,18 +11,18 @@ switch (bahasa) {
   case "jp":
   case "JP":
     console.log("Language: Japanese");
-    console.log("Kon'ichiwa");
+    console.log("ようこそ！本日はどのようなご用件でしょうか？");
     break;
 
   case "kr":
   case "KR":
     console.log("Language: Korean");
-    console.log("Annyeonghaseyo");
+    console.log("환영합니다! 오늘 무엇을 도와드릴까요?");
     break;
   case "id":
   case "ID":
     console.log("Language: bahasa Indonesia");
-    console.log("Apa Kabar?");
+    console.log("Selamat datang! Ada yang bisa kami bantu hari ini?");
     break;
   default:
     console.log("Language not supported");
