@@ -1,7 +1,6 @@
 let waktu = 10;
 let tombolDitekan = false;
 
-// Simulasi: tombol akan ditekan pada detik ke-7
 // Tulis kode while loop di sini untuk countdown timer
 while (waktu > 0) {
     console.log("Countdown: " + waktu);
