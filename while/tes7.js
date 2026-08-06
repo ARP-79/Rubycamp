@@ -7,7 +7,7 @@ while (waktu > 0) {
     
     if (waktu === 7) {
         tombolDitekan = true;
-        break; // Keluar dari loop karena tombol ditekan
+        break; 
     }
     
     waktu--;
