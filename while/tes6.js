@@ -11,7 +11,7 @@ while (percobaan < maxPercobaan) {
     
     if (password === "admin123") {
         berhasil = true;
-        break; // Keluar dari loop jika login berhasil
+        break; 
     } else {
         percobaan++;
         let sisaPercobaan = maxPercobaan - percobaan;
