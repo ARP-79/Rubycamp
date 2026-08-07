@@ -5,7 +5,6 @@ function searchInText(text, search) {
     
     let count = 0;
     if (found && search.length > 0) {
-        // Meloloskan karakter spesial regex jika ada
         const escapedSearch = search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(escapedSearch, 'g');
         count = (text.match(regex) || []).length;
