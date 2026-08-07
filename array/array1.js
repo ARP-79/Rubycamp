@@ -9,7 +9,7 @@ function getArrayInfo(arr) {
     };
 }
 
-// Driver code untuk pengujian
+
 console.log(getArrayInfo([1, 2, 3, 4, 5]));
 console.log(getArrayInfo(["a", "b", "c"]));
 console.log(getArrayInfo([]));
