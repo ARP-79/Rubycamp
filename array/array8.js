@@ -1,5 +1,5 @@
 function aggregateArray(arr) {
-  const isNumberArray = arr.every(item => typeof item == "number");
+  const isNumberArray = arr.every(item => typeof item === "number");
 
   if (isNumberArray) {
     const sum = arr.reduce((acc, num) => acc + num, 0);

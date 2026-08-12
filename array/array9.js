@@ -1,8 +1,8 @@
 function validateArrayData(arr) {
   let numbers = arr.filter(item => typeof item == "number");
   let strings = arr.filter(item => typeof item == "string");
-  let nulls = arr.filter(item => item === null);
-  let undefineds = arr.filter(item => item === undefined);
+  let nulls = arr.filter(item => item == null);
+  let undefineds = arr.filter(item => item == undefined);
 
   const allNumbers = arr.every(item => typeof item == "number");
 
