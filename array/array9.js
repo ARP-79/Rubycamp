@@ -1,43 +1,34 @@
 function validateArrayData(arr) {
-  let numbers = 0;
-  let strings = 0;
-  let nulls = 0;
-  let undefineds = 0;
-  let cleaned = [];
+  let numbers = arr.filter(item => typeof item == "number");
+  let strings = arr.filter(item => typeof item == "string");
+  let nulls = arr.filter(item => item === null);
+  let undefineds = arr.filter(item => item === undefined);
 
-  for (let i = 0; i < arr.length; i++) {
-    const item = arr[i];
-    
-    if (typeof item == 'number') {
-      numbers++;
-      cleaned.push(item);
-    } else if (typeof item == 'string') {
-      strings++;
-    } else if (item == null) {
-      nulls++;
-    } else if (typeof item == 'undefined') {
-      undefineds++;
-    }
-  }
+  const allNumbers = arr.every(item => typeof item == "number");
 
+  const hasNulls = nulls.length > 0;
+  const hasUndefined = undefineds.length > 0;
 
-  const isValid = numbers === arr.length;
-  const allNumbers = numbers === arr.length;
-  const hasNulls = nulls > 0;
-  const hasUndefined = undefineds > 0;
+  const isValid = allNumbers && !hasNulls && !hasUndefined;
 
   return {
-    isValid: isValid,
-    allNumbers: allNumbers,
-    hasNulls: hasNulls,
-    hasUndefined: hasUndefined,
+    isValid,
+    allNumbers,
+    hasNulls,
+    hasUndefined,
     stats: {
       total: arr.length,
-      numbers: numbers,
-      strings: strings,
-      nulls: nulls,
-      undefined: undefineds
+      numbers: numbers.length,
+      strings: strings.length,
+      nulls: nulls.length,
+      undefined: undefineds.length
     },
-    cleaned: cleaned
+    cleaned: numbers
   };
 }
+
+let data1 = [1, 2, 3, 4, 5];
+let data2 = [1, "2", 3, null, 5, undefined];
+
+console.log(validateArrayData(data1));
+console.log(validateArrayData(data2));
