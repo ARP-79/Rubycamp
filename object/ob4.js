@@ -1,42 +1,19 @@
-function extractUserData(user) {
-    const {
-        id: userId,
-        profile: {
-            name: fullName,
-            email,
-            address: {
-                street,
-                city,
-                zipCode
-            }
-        },
-        preferences: {
-            theme,
-            language
-        }
-    } = user;
+// Tulis function extractUserData di sini
 
-    if (
-        userId === undefined ||
-        !fullName ||
-        !email ||
-        !street ||
-        !city ||
-        !zipCode ||
-        !theme ||
-        !language
-    ) {
-        throw new Error("Data user tidak lengkap");
+let user = {
+  id: 1,
+  profile: {
+    name: "John Doe",
+    email: "john@example.com",
+    address: {
+      street: "Jl. Sudirman",
+      city: "Jakarta",
+      zipCode: "12345"
     }
-
-    return {
-        userId,
-        fullName,
-        email,
-        location: `${street}, ${city} ${zipCode}`,
-        settings: {
-            theme,
-            language
-        }
-    };
-}
+  },
+  preferences: {
+    theme: "dark",
+    language: "id"
+  }
+};
+console.log(extractUserData(user));
