@@ -1,8 +1,8 @@
 CREATE TABLE employees (
-    id INT PRIMARY KEY,
-    first_name VARCHAR(50),
+    id INT PRIMARY KEY NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50),
-    email VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
     salary DECIMAL(10,2),
     department VARCHAR(50),
     hire_date DATE
@@ -16,5 +16,5 @@ INSERT INTO employees VALUES
 (5, 'Charlie', 'Wilson', 'charlie.wilson@company.com', 70000.00, 'Engineering', '2020-09-12');
 
 --jawaban
---SELECT *FROM employees ORDER BY last_name ASC;
+--SELECT * FROM employees ORDER BY last_name ASC;
 

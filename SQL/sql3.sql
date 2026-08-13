@@ -17,8 +17,8 @@ INSERT INTO employees VALUES
 (5, 'Charlie', 'Wilson', 'charlie.wilson@company.com', 70000.00, 'Engineering', '2020-09-12');
 
 --JAWABAN
-SELECT *
-FROM employees
-WHERE first_name LIKE '%o%'
-AND email LIKE '%.com'
-ORDER BY hire_date DESC;
+--SELECT *
+--FROM employees
+--WHERE first_name LIKE '%o%'
+--AND email LIKE '%.com'
+--ORDER BY hire_date DESC;

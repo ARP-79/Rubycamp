@@ -31,13 +31,14 @@ INSERT INTO employees VALUES
 (5, 'Charlie', 'Wilson', 'charlie.wilson@company.com', 70000.00, 1, '2020-09-12'),
 (6, 'Diana', 'Davis', 'diana.davis@company.com', 45000.00, 4, '2021-02-28');
 
+
 --JAWABAN
 SELECT 
     first_name, 
     last_name, 
-    salary, 
-    department_name
+    hire_date, 
+    TIMESTAMPDIFF(YEAR, hire_date, CURRENT_DATE) AS years_worked
 FROM 
-    employees 
-INNER JOIN 
-    departments  ON departments.id = employees.department_id;
+    employees
+WHERE 
+    TIMESTAMPDIFF(YEAR, hire_date, CURRENT_DATE) > 2;
