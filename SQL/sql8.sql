@@ -33,12 +33,3 @@ INSERT INTO employees VALUES
 
 
 --JAWABAN
-SELECT 
-    first_name, 
-    last_name, 
-    hire_date, 
-    TIMESTAMPDIFF(YEAR, hire_date, CURRENT_DATE) AS years_worked
-FROM 
-    employees
-WHERE 
-    TIMESTAMPDIFF(YEAR, hire_date, CURRENT_DATE) > 2;
