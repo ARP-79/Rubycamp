@@ -15,10 +15,6 @@ function createCalculator() {
       return saveOperation(`${a} + ${b}`, a + b);
     },
 
-    subtract(a, b) {
-      return saveOperation(`${a} - ${b}`, a - b);
-    },
-
     multiply(a, b) {
       return saveOperation(`${a} * ${b}`, a * b);
     },
