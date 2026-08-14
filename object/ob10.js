@@ -49,7 +49,7 @@ function objectAnalyzer(obj) {
             primitiveCount: primitiveCount
         },
         analysis: {
-        
+
         }
     };
 }
