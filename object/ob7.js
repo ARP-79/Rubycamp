@@ -24,7 +24,6 @@ function transformObjectArray(data, config) {
     });
   }
 
-  // MAP
   if (config.map) {
     result = result.map(item => {
       const newItem = { ...item };
